@@ -1,6 +1,6 @@
 # Madùwwe : Collecting Egyptian Words
 
-Madùwwe (/maˈduwwə/, the likely early New Kingdom pronunciation of mdw.w = "words") is a project aiming at collecting digital lexical datasets for the Ancient Egyptian language.
+Madùwwe (/maˈduwwə/, the likely early New Kingdom pronunciation of 𓌃𓌃𓌃 : mdw.w = "words") is a project aiming at collecting digital lexical datasets for the Ancient Egyptian language.
 
 I have conceived the Madùwwe datasets to be used both by Egyptologists, by general historical linguists, and by computational linguists, and they are thus developped within an interdisciplinary, collaborative and opensource frame. This philosophy is reflected in the use of standardised transcriptions and transliterations, in coherent and regular encoding that makes the data easily accessible through scripts and digital methods, and in the multiple crossreferences to the databases of other major linguistic and egyptological projects.
 
@@ -8,7 +8,7 @@ Madàwwe is a work-in-progress project - and so are the datasets that are curren
 
 ## Datasets
 
-### ThotBank
+## 1) ThotBank
 
 Status: work-in-progress
 
@@ -18,7 +18,9 @@ Link: [ThotBank](ThotBank)
 
 #### Description
 
-ThotBank is a dataset of Coptic words for which an Egyptian etymology has been suggested. The datased provides the Coptic form in unicode, and automatically generated trascription, dialectal variants, translation based on the [Comprehensive Coptic Lexicon](http://coptic-dictionary.org/about.cgi) project, the suggested Egyptian etymology with references, a translation of the Egyptian form based on the [Thesaurus Linguae Aegyptiae](http://aaew.bbaw.de/tla/index.html) project, and additional related Coptic and Egyptian words.
+ThotBank is a dataset of Coptic words for which an Egyptian etymology has been suggested. The datased provides the Coptic form in unicode, and automatically generated trascription, translation based on the [Comprehensive Coptic Lexicon](http://coptic-dictionary.org/about.cgi) project, the suggested Egyptian etymology with references, a translation of the Egyptian form based on the [Thesaurus Linguae Aegyptiae](http://aaew.bbaw.de/tla/index.html) project, and additional related Coptic and Egyptian words.
+
+Dialectal variants of the Coptic forms will be added soon.
 
 The project is currently in developement, and new entries and new references are added regularly.
 
@@ -40,7 +42,7 @@ Kilani Marwan, 2020, Madùwwe Project - ThotBank dataset, https://github.com/MKi
 
 This database is part of the output of the PostDoc project "Wandering Words: Sociolinguistics of Loanwords in Egypt and the Ancient Near East", sponsored by Swiss National Science Foundation (Mobility Grant - P400PG_186657 )
 
-### HathorBank
+## 2) HathorBank
 
 Status: work-in-progress - coming soon
 
@@ -51,6 +53,8 @@ Link: [HathorBank](HathorBank)
 #### Description
 
 The HathorBank database will collect Egyptian laonword of Levantine (mainly Semitic) origins attested in New Kingdom sources. The dataset will provide information on their spellings, contexts and periods of attestations, semantic fields, attested and reconstructed phonology, and on possible cognates outside Egyptian.
+
+The data will be interlinked, through ID numbers, to the [ThotBank](ThotBank), the [Comprehensive Coptic Lexicon](http://coptic-dictionary.org/about.cgi), the [Thesaurus Linguae Aegyptiae](http://aaew.bbaw.de/tla/index.html), the [iClassifier](https://www.iclassifier.pw), and the [ConceptIcon](https://concepticon.clld.org) databases.
 
 The HathorBank is conceived as a long term project, and it is currently in its earlier phase of development. No data is available yet, but a first preliminary release is planned for spring 2020.
 
