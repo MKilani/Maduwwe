@@ -54,7 +54,7 @@ Link: [HathorBank](HathorBank)
 
 The HathorBank database will collect Egyptian laonword of Levantine (mainly Semitic) origins attested in New Kingdom sources. The dataset will provide information on their spellings, contexts and periods of attestations, semantic fields, attested and reconstructed phonology, and on possible cognates outside Egyptian.
 
-The data will be interlinked, through ID numbers, to the [ThotBank](ThotBank), the [Comprehensive Coptic Lexicon](http://coptic-dictionary.org/about.cgi), the [Thesaurus Linguae Aegyptiae](http://aaew.bbaw.de/tla/index.html), the [iClassifier](https://www.iclassifier.pw), and the [ConceptIcon](https://concepticon.clld.org) databases.
+The data will be interlinked, through ID numbers, to the [ThotBank](ThotBank), the [Comprehensive Coptic Lexicon](http://coptic-dictionary.org/about.cgi), the [Thesaurus Linguae Aegyptiae](http://aaew.bbaw.de/tla/index.html), the [Ramses](http://ramses.ulg.ac.be), the [iClassifier](https://www.iclassifier.pw), and the [Lexibank](https://glottobank.org/#lexibank) databases.
 
 The HathorBank is conceived as a long term project, and it is currently in its earlier phase of development. No data is available yet, but a first preliminary release is planned for spring 2020.
 

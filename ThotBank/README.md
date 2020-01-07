@@ -60,7 +60,9 @@ The dataset is currently distributed as a .json with the following structure:
             "TLA_ID_Egyptian": [["TLA_transliteration"], ["Kilani_transliteration"], "TLA_translation"]
         }
     },
-    ...
+    "...": {
+        "..."
+    }
 }
 ```
 
@@ -70,7 +72,9 @@ Version 1 (ThotBank_1_5):
 
 ```json
 {
-	...
+    "...": {
+        "..."
+    },
 	"2455": {
         "matches": [
             [
@@ -103,7 +107,9 @@ Version 1 (ThotBank_1_5):
             "856747": "[['gnn.w'], ['gnn.w'], 'weakness']"
         }
     },
-    ...
+    "...": {
+        "..."
+    }
 }
 ```
 
@@ -111,7 +117,9 @@ Version 2 (ThotBank_1_5_one_line):
 
 ```json
 {
-	...
+    "...": {
+        "..."
+    },
 	"2455": {
         "matches": [
             [
@@ -255,6 +263,8 @@ Version 2 (ThotBank_1_5_one_line):
             ]
         }
     },
-    ...
+    "...": {
+        "..."
+    }
 }
 ```
