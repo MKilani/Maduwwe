@@ -64,7 +64,7 @@ For further details and a preliminary version of the structure of the database, 
 
 #### How to cite
 
-Kilani Marwan, 2020, Madùwwe Project - ThotBank dataset, https://github.com/MKilani/Maduwwe
+Kilani Marwan, 2020, Madùwwe Project - HathorBank dataset, https://github.com/MKilani/Maduwwe
 
 #### Authors
 

@@ -6,8 +6,6 @@ Current release: 1.5, 07.01.2020
 
 Estimated Completion Date: February 2020
 
-Link: [ThotBank](ThotBank)
-
 ## How to cite
 
 Kilani Marwan, 2020, Madùwwe Project - ThotBank dataset, https://github.com/MKilani/Maduwwe
