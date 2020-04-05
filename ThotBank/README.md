@@ -33,238 +33,156 @@ Each entry is interlinked, through ID numbers, to both the [Comprehensive Coptic
 The dataset is currently distributed as a .json with the following structure:
 
 ```json
-{
-	"ThotBank_ID": {
-        "matches": [
-            [
-                {
-                    "01_Vycichl_page": "page_nr, page_nr",
-                    "02_Osing_page": "page_nr, page_nr",
-                    "03_Černý_page": "page_nr, page_nr",
-                    "04_Kilani": "agree/disagree (ref. if any)",
-                    "10_match": [
-                        {"CCL_ID_Coptic": [["Coptic_Unicode"], ["Automatic_Transliteration"], "CCL_transaltion"]},
-                        {"TLA_ID_Egyptian": [["TLA_transliteration"], ["Kilani_transliteration"], "TLA_translation"]},
-                        {"TLA_ID_Demotic": [["TLA_transliteration"], ["Kilani_transliteration"], "English_translation_of_TLA_translation_german | TLA_translation_german"]}
-                    ]
-                }
-            ]
-        ],
-        "other_Coptic": {
-            "CCL_ID_Coptic": [["Coptic_Unicode"], ["Automatic_Transliteration"], "CCL_transaltion"]
-        },
-        "other_Demotic": {
-            "TLA_ID_Demotic": [["TLA_transliteration"], ["Kilani_transliteration"], "English_translation_of_TLA_translation_german | TLA_translation_german"]
-        },
-        "other_Egyptian": {
-            "TLA_ID_Egyptian": [["TLA_transliteration"], ["Kilani_transliteration"], "TLA_translation"]
-        }
-    },
-    "...": {
-        "..."
-    }
-}
+
+      "EGY_ROOT-form": "string",
+      "EGY_ROOT-meaning_en": "string",
+      "TLA-forms": dict{},
+      "BBWA-forms": dict{},
+      "MATCHES": dict{}
+
+
 ```
 
-The dataset is provided in two variants: in the first some of the sublists have been converted into strings for the sake of readability, while in the in the second all lists and sublists are encoded as such.
+Each entry is identified by an ID ("EGY_ROOT-ID") and has the following main fields.
 
-Version 1 (ThotBank_1_5):
+The "TLA-forms" contains references to the Egyptian and Demotic words recorded in the TLA that are related with basic root.
+
+The "BBWA-forms" contains references to the Coptic words recorded in the BBWA database that are related with basic root according to the etymologies provided by various scholars.
+
+The "MATCHES" contains etymologies sugegsted by various scholars connecting the basic root to Coptic words. Each entry in the "MATCHES" field correspond to one single grammatical form suggested by one scholar.
+
+Finally note that the database is still in progress, so many fields already exist, but are still empty - they will be filled up in the future (e.g. the "EGY_ROOT-meaning_en" are all empty, as the prototypical meanign of the root will have to be reconstructed on the basis of the Egyptian attestations in the TLA and the Coptic attestations in the BBWA database).
+
+Here a sample entry:
+
 
 ```json
 {
-    "...": {
-        "..."
-    },
-	"2455": {
-        "matches": [
-            [
-                {
-                    "01_Vycichl_page": "342",
-                    "02_Osing_page": "46, 188",
-                    "03_Černý_page": "332",
-                    "04_Kilani": "agree (-)",
-                    "10_match": [
-                        "{'C7765': [['ϭⲛⲟⲛ'], ['kʲ.n.o.n'], 'be soft, smooth, weak']}",
-                        "{'d6811': [['gnn'], ['gnn'], 'to be tender, to be mild; to be wet | zart sein, milde sein; feucht sein']}",
-                        "{'167540': [['gnn'], ['gnn'], 'to be weak; to be soft'], '600572': [['gnn'], ['gnn'], 'to be weak; to be soft']}"
-                    ]
-                }
+    ...
+    "118": {
+      "EGY_ROOT-ID": 118,
+      "EGY_ROOT-form": "gḏ",
+      "EGY_ROOT-meaning_en": "",
+      "TLA-forms": {
+         "877949": {
+            "TLA-ID": "877949",
+            "TLA-form": "gḏ",
+            "TLA-meaning_en": "",
+            "TLA-meaning_de": "[Hand]"
+         },
+         "d6713": {
+            "TLA-ID": "d6713",
+            "TLA-form": "gjḏ(.t)",
+            "TLA-meaning_en": "",
+            "TLA-meaning_de": "Hand"
+         },
+         "168780": {
+            "TLA-ID": "168780",
+            "TLA-form": "gḏ",
+            "TLA-meaning_en": "",
+            "TLA-meaning_de": "Arme"
+         }
+      },
+      "BBWA-forms": {
+         "C7995": {
+            "BBWA-ID": "C7995",
+            "BBWA-form": "ϭⲓϫ",
+            "BBWA-meaning_en": "hand; forefoot (of animals); handful (as measure); handwriting; handiwork, handicraft, activity",
+            "BBWA_MATCH-ID": [
+               "250"
             ]
-        ],
-        "other_Coptic": {
-            "C7766": "[['ϭⲛⲟⲛ'], ['kʲ.n.o.n'], 'softness']",
-            "C7769": "[['ϭⲛⲟⲛ'], ['kʲ.n.o.n'], 'bend, bow']"
-        },
-        "other_Demotic": {
-        },
-        "other_Egyptian": {
-            "167550": "[['gnn'], ['gnn'], 'weak one']",
-            "167560": "[['gnn'], ['gnn'], 'soft part of a plant product (med.)']",
-            "167570": "[['gnn'], ['gnn'], 'an aromatic plant']",
-            "167580": "[['gnn'], ['gnn'], 'an edible plant (legume?)']",
-            "167600": "[['gnn.t'], ['gnn.t'], 'weakness (?)']",
-            "167610": "[['gnn.w'], ['gnn.w'], 'fat']",
-            "856747": "[['gnn.w'], ['gnn.w'], 'weakness']"
-        }
-    },
-    "...": {
-        "..."
-    }
+         },
+         "C7999": {
+            "BBWA-ID": "C7999",
+            "BBWA-form": "ϭⲓϫ",
+            "BBWA-meaning_en": "by hand",
+            "BBWA_MATCH-ID": [
+               "250"
+            ]
+         }
+      },
+      "MATCHES": {
+         "250": {
+            "MATCH-ID": "250",
+            "MATCH-form": "",
+            "MATCH-meaning_en": "",
+            "MATCH-gram_number": "",
+            "MATCH-gram_gender": "",
+            "MATCH-pattern": "",
+            "VYCICHL-1983": {
+               "Degree_Certainty": "very_likely",
+               "Relation_cpt-eg_forms": "same",
+               "Root": "gḏ; gḏw; qḏ.t",
+               "Reconstruction": "",
+               "Gram_number": "",
+               "Gram_gender": "",
+               "Gram_form": "",
+               "Meaning_fr": "main; pied de devant d'une bête",
+               "Pages": "92",
+               "S": "ϭⲓϫ",
+               "B": "",
+               "A": "",
+               "A2": "",
+               "P": "ⲕⲓϫ",
+               "F": "ϭⲓϭ, ϫⲓϫϩ",
+               "F0": "",
+               "S0": "",
+               "O": "",
+               "B0": "",
+               "A0": "",
+               "M": "ϭⲓϭ",
+               "L": "",
+               "G": "",
+               "B-Gr": "",
+               "Sf": "",
+               "H": "",
+               "A20": "",
+               "Hf": ""
+            }
+         },
+         "251": {
+            "MATCH-ID": "251",
+            "MATCH-form": "",
+            "MATCH-meaning_en": "",
+            "MATCH-gram_number": "pl",
+            "MATCH-gram_gender": "",
+            "MATCH-pattern": "",
+            "VYCICHL-1983": {
+               "Degree_Certainty": "very_likely",
+               "Relation_cpt-eg_forms": "same",
+               "Root": "gḏ; gḏw; qḏ.t",
+               "Reconstruction": "*qiḏw-ū; *qiwḏ-ū",
+               "Gram_number": "pl",
+               "Gram_gender": "",
+               "Gram_form": "",
+               "Meaning_fr": "main; pied de devant d'une bête",
+               "Pages": "92",
+               "S": "",
+               "B": "",
+               "A": "",
+               "A2": "",
+               "P": "",
+               "F": "ϫⲉⲩϫ, ϫⲉⲟⲩϫ, ϫⲉⲟⲩϫϩ, ϫⲉⲟⲩϩϫ, ϫⲉϫⲟⲩϫϩ",
+               "F0": "",
+               "S0": "",
+               "O": "",
+               "B0": "",
+               "A0": "",
+               "M": "",
+               "L": "",
+               "G": "",
+               "B-Gr": "",
+               "Sf": "",
+               "H": "",
+               "A20": "",
+               "Hf": ""
+            }
+         }
+      }
+   },
+   ...
 }
 ```
 
-Version 2 (ThotBank_1_5_one_line):
 
-```json
-{
-    "...": {
-        "..."
-    },
-	"2455": {
-        "matches": [
-            [
-                {
-                    "01_Vycichl_page": "342",
-                    "02_Osing_page": "46, 188",
-                    "03_Černý_page": "332",
-                    "04_Kilani": "agree (-)",
-                    "10_match": [
-                        {
-                            "C7765": [
-                                [
-                                    "ϭⲛⲟⲛ"
-                                ],
-                                [
-                                    "kʲ.n.o.n"
-                                ],
-                                "be soft, smooth, weak"
-                            ]
-                        },
-                        {
-                            "d6811": [
-                                [
-                                    "gnn"
-                                ],
-                                [
-                                    "gnn"
-                                ], 
-                                "to be tender, to be mild; to be wet | zart sein, milde sein; feucht sein"
-                            ]
-                        },
-                        {
-                            "167540": [
-                                [
-                                    "gnn"
-                                ],
-                                [
-                                    "gnn"
-                                ],
-                                "to be weak; to be soft"
-                            ],
-                            "600572": [
-                                [
-                                    "gnn"
-                                ],
-                                [
-                                    "gnn"
-                                ],
-                                "to be weak; to be soft"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        ],
-        "other_Coptic": {
-            "C7766": [
-                [
-                    "ϭⲛⲟⲛ"
-                ],
-                [
-                    "kʲ.n.o.n"
-                ],
-                "softness"
-            ],
-            "C7769": [
-                [
-                    "ϭⲛⲟⲛ"
-                ],
-                [
-                    "kʲ.n.o.n"
-                ],
-                "bend, bow"
-            ]
-        },
-        "other_Demotic": {
-        },
-        "other_Egyptian": {
-            "167550": [
-                [
-                    "gnn"
-                ],
-                [
-                    "gnn"
-                ],
-                "weak one"
-            ],
-            "167560": [
-                [
-                    "gnn"
-                ],
-                [
-                    "gnn"
-                ],
-                "soft part of a plant product (med.)"
-            ],
-            "167570": [
-                [
-                    "gnn"
-                ],
-                [
-                    "gnn"
-                ],
-                "an aromatic plant"
-            ],
-            "167580": [
-                [
-                    "gnn"
-                ],
-                [
-                    "gnn"
-                ],
-                "an edible plant (legume?)"
-            ],
-            "167600": [
-                [
-                    "gnn.t"
-                ],
-                [
-                    "gnn.t"
-                ],
-                "weakness (?)"
-            ],
-            "167610": [
-                [
-                    "gnn.w"
-                ],
-                [
-                    "gnn.w"
-                ],
-                "fat"
-            ],
-            "856747": [
-                [
-                    "gnn.w"
-                ],
-                [
-                    "gnn.w"
-                ],
-                "weakness"
-            ]
-        }
-    },
-    "...": {
-        "..."
-    }
-}
-```
+
