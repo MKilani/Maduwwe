@@ -20,7 +20,7 @@ This database is part of the output of the PostDoc project "Wandering Words: Soc
 
 ## Description
 
-ThotBank is a dataset of Coptic words for which an Egyptian etymology has been suggested. The datased provides the Coptic form in unicode, and automatically generated trascription, translation based on the [Comprehensive Coptic Lexicon](http://coptic-dictionary.org/about.cgi) project (CCL), the suggested Egyptian etymology with references, a translation of the Egyptian form based on the [Thesaurus Linguae Aegyptiae](http://aaew.bbaw.de/tla/index.html) project (TLA), and additional related Coptic and Egyptian words.
+ThotBank is a dataset of Coptic words for which an Egyptian etymology has been suggested. The datased provides the Coptic form in unicode, and automatically generated trascription, translation based on the [Coptic Online Dictionary](http://coptic-dictionary.org/about.cgi) project (COD), the suggested Egyptian etymology with references, a translation of the Egyptian form based on the [Thesaurus Linguae Aegyptiae](http://aaew.bbaw.de/tla/index.html) project (TLA), and additional related Coptic and Egyptian words.
 
 Dialectal variants of the Coptic forms will be added soon.
 
