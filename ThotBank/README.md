@@ -2,9 +2,7 @@
 
 Status: work-in-progress
 
-Current release: 1.5, 07.01.2020
-
-Estimated Completion Date: February 2020
+Current release: 1.4, 09.04.2020
 
 ## How to cite
 
@@ -17,6 +15,10 @@ Kilani Marwan, 2020, Madùwwe Project - ThotBank dataset, https://github.com/MKi
 ## Others
 
 This database is part of the output of the PostDoc project "Wandering Words: Sociolinguistics of Loanwords in Egypt and the Ancient Near East", sponsored by Swiss National Science Foundation (Mobility Grant - P400PG_186657 )
+
+## Online version
+
+Live version of the database: [ThotBank](http://maduwwe.herokuapp.com/ThotBank/)
 
 ## Description
 
