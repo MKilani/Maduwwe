@@ -36,12 +36,13 @@ The dataset is currently distributed as a .json with the following structure:
 
 ```json
 
+      "EGY_ROOT__ID": int,
+      "EGY_ROOT__TLA_ROOT": dict{},
       "EGY_ROOT-form": "string",
       "EGY_ROOT-meaning_en": "string",
       "TLA-forms": dict{},
-      "BBWA-forms": dict{},
+      "CCL__forms": dict{},
       "MATCHES": dict{}
-
 
 ```
 
@@ -60,7 +61,7 @@ Here a sample entry:
 
 ```json
 {
-    ...
+    //...
     "118": {
       "EGY_ROOT-ID": 118,
       "EGY_ROOT-form": "gḏ",
@@ -85,20 +86,20 @@ Here a sample entry:
             "TLA-meaning_de": "Arme"
          }
       },
-      "BBWA-forms": {
+      "CCL-forms": {
          "C7995": {
-            "BBWA-ID": "C7995",
-            "BBWA-form": "ϭⲓϫ",
-            "BBWA-meaning_en": "hand; forefoot (of animals); handful (as measure); handwriting; handiwork, handicraft, activity",
-            "BBWA_MATCH-ID": [
+            "CCL-ID": "C7995",
+            "CCL-form": "ϭⲓϫ",
+            "CCL-meaning_en": "hand; forefoot (of animals); handful (as measure); handwriting; handiwork, handicraft, activity",
+            "CCL_MATCH-ID": [
                "250"
             ]
          },
          "C7999": {
-            "BBWA-ID": "C7999",
-            "BBWA-form": "ϭⲓϫ",
-            "BBWA-meaning_en": "by hand",
-            "BBWA_MATCH-ID": [
+            "CCL-ID": "C7999",
+            "CCL-form": "ϭⲓϫ",
+            "CCL-meaning_en": "by hand",
+            "CCL_MATCH-ID": [
                "250"
             ]
          }
@@ -121,25 +122,27 @@ Here a sample entry:
                "Gram_form": "",
                "Meaning_fr": "main; pied de devant d'une bête",
                "Pages": "92",
-               "S": "ϭⲓϫ",
-               "B": "",
-               "A": "",
-               "A2": "",
-               "P": "ⲕⲓϫ",
-               "F": "ϭⲓϭ, ϫⲓϫϩ",
-               "F0": "",
-               "S0": "",
-               "O": "",
-               "B0": "",
-               "A0": "",
-               "M": "ϭⲓϭ",
-               "L": "",
-               "G": "",
-               "B-Gr": "",
-               "Sf": "",
-               "H": "",
-               "A20": "",
-               "Hf": ""
+               "Coptic": {
+                  "S": "ϭⲓϫ",
+                  "B": "",
+                  "A": "",
+                  "A2": "",
+                  "P": "ⲕⲓϫ",
+                  "F": "ϭⲓϭ, ϫⲓϫϩ",
+                  "F0": "",
+                  "S0": "",
+                  "O": "",
+                  "B0": "",
+                  "A0": "",
+                  "M": "ϭⲓϭ",
+                  "L": "",
+                  "G": "",
+                  "B-Gr": "",
+                  "Sf": "",
+                  "H": "",
+                  "A20": "",
+                  "Hf": ""
+               }
             }
          },
          "251": {
@@ -159,30 +162,32 @@ Here a sample entry:
                "Gram_form": "",
                "Meaning_fr": "main; pied de devant d'une bête",
                "Pages": "92",
-               "S": "",
-               "B": "",
-               "A": "",
-               "A2": "",
-               "P": "",
-               "F": "ϫⲉⲩϫ, ϫⲉⲟⲩϫ, ϫⲉⲟⲩϫϩ, ϫⲉⲟⲩϩϫ, ϫⲉϫⲟⲩϫϩ",
-               "F0": "",
-               "S0": "",
-               "O": "",
-               "B0": "",
-               "A0": "",
-               "M": "",
-               "L": "",
-               "G": "",
-               "B-Gr": "",
-               "Sf": "",
-               "H": "",
-               "A20": "",
-               "Hf": ""
+               "Coptic": {
+                  "S": "",
+                  "B": "",
+                  "A": "",
+                  "A2": "",
+                  "P": "",
+                  "F": "ϫⲉⲩϫ, ϫⲉⲟⲩϫ, ϫⲉⲟⲩϫϩ, ϫⲉⲟⲩϩϫ, ϫⲉϫⲟⲩϫϩ",
+                  "F0": "",
+                  "S0": "",
+                  "O": "",
+                  "B0": "",
+                  "A0": "",
+                  "M": "",
+                  "L": "",
+                  "G": "",
+                  "B-Gr": "",
+                  "Sf": "",
+                  "H": "",
+                  "A20": "",
+                  "Hf": ""
+               }
             }
          }
       }
    },
-   ...
+   //...
 }
 ```
 
