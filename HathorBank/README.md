@@ -2,7 +2,9 @@
 
 Status: work-in-progress - coming soon
 
-Current release: NA
+Current release: Beta
+
+Current URL: http://hathorbank.herokuapp.com/HathorBank/
 
 Estimated Completion Date: preliminary dataset/test-case corpus: late 2020
 
